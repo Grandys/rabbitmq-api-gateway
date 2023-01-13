@@ -1,0 +1,9 @@
+### Publish message
+POST localhost:8080/notifications
+Content-Type: application/json
+X-Routing-Key: text
+
+{
+  "message": "Hello, world!"
+}
+

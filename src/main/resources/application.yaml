@@ -1,0 +1,8 @@
+gateway:
+  rabbitmq:
+    host: localhost
+    http-port: 15672
+    user: guest
+    password: guest
+    exchange: notifications
+    vhost: /

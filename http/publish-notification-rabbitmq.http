@@ -1,0 +1,9 @@
+### Publish message directly via RabbitMq rest api
+POST http://guest:guest@localhost:15672/api/exchanges/%2F/notifications/publish
+
+{
+  "properties": {},
+  "routing_key":"test",
+  "payload": "test",
+  "payload_encoding":"string"
+}
