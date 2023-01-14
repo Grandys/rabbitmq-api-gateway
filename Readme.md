@@ -11,4 +11,4 @@ docker-compose up
 RabbitMq server has predefined single exchange `notifications` with type topic. Exchange is binded with queue `notification.client`, matching all routing key (`*`).
 
 2. Run `Main` method
-3. Execute http request [publish-notification.http](./http/publish-notification.http). Service will publish message 
+3. Execute http request [publish-notification.http](./http/publish-notification.http). Service will publish message to exchange specified in application properties 
