@@ -34,7 +34,9 @@ class RabbitMqRouteLocator {
                                                         MediaType.APPLICATION_JSON_VALUE,
                                                         RabbitMqMessage.bodyToRabbitMqMapper()
                                                 )
-                                                .changeRequestUri(requestUriMapper)
+                                                .changeRequestUri(
+                                                        requestUriMapper
+                                                )
                                                 .addRequestHeader(
                                                         HttpHeaders.AUTHORIZATION,
                                                         config.getBasicAUthHeaderValue()
