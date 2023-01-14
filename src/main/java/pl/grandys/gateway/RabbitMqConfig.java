@@ -3,6 +3,7 @@ package pl.grandys.gateway;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
 @ConfigurationProperties(prefix = "gateway.rabbitmq")
@@ -67,7 +68,7 @@ class RabbitMqConfig {
     }
 
     String urlEncodedVhost() {
-        return URLEncoder.encode(vhost);
+        return URLEncoder.encode(vhost, StandardCharsets.UTF_8);
     }
 
     String getBasicAUthHeaderValue() {
